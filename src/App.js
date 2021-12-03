@@ -1,4 +1,13 @@
 import React from 'react';
-import { NewsContainer } from './containers/NewsContainer';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-export const App = () => <NewsContainer />
+import { NewsContainer } from './containers/NewsContainer';
+import { PageNewContainer } from './containers/PageNewContainer';
+
+export const App = () => 
+<BrowserRouter>
+    <Switch>
+        <Route path="/news" component={NewsContainer} />
+        <Route path="/new-item" component={PageNewContainer}/>
+    </Switch>
+</BrowserRouter>
