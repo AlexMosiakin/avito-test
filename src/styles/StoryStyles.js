@@ -1,16 +1,33 @@
 import styled from 'styled-components'
 
 export const StoryWrapper = styled.section`
-padding-top:10px;
-margin-bottom:20px;
-border-top:1px solid #ccc;
+padding: 20px;
+background: #fff;
+border-radius: 8px;
+pointer-events:none;
+height: calc(100% - 40px);
+color:#000;
 
-&:first-of-type{
-    border-top:0;
+.story-title{
+    font-weight:700;
+    color: rgb(255, 102, 0);
 }
-
-&:last-of-type{
-    margin-bottom:0;
-    padding-bottom:0;
+.story-title-item{
+    font-weight:700;
+    color: rgb(255, 102, 0);
+    font-size:32px;
+}
+.story-row{
+    margin: 0 0 20px 0;
+    align-items: center;
+    display: flex;
+    font-size:24px
+}
+.story-row>img{
+    max-width:32px;
+    margin-right:10px;
+}
+.story-row:last-child{
+    margin:0;
 }
 `;

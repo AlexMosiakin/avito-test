@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from "react";
 import { getStory } from "../services/newsApi";
 
-export const NewItem = ({newId}) => {
+export const NewItem = ({newCurrentId}) => {
 
     const [story, setStory] = useState({});
 
     useEffect(() => {
-        getStory(newId).then(data => data && data.id && setStory(data))
+        getStory(newCurrentId).then(data => data && data.id && setStory(data))
     },[])
 
     return story && story.id ? (
