@@ -32,7 +32,7 @@ export const NewsContainer = ({appCallback}) => {
         <>
         <AppHeaderWrapper>
           <AppHeader>Hacker News</AppHeader>
-          <Reload onClick={handleReload}>
+          <Reload className={'btn'} onClick={handleReload}>
             <img src={reload} alt={reload} />
           </Reload>
         </AppHeaderWrapper>

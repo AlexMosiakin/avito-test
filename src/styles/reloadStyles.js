@@ -12,6 +12,7 @@ export const Reload = styled.button`
     width:64px;
     height:64px;
     margin-left: auto;
+    transition: 0.5s;
 
     img{
         max-width:32px;

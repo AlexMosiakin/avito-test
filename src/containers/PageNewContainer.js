@@ -54,11 +54,11 @@ export const PageNewContainer = ({newCurrentId}) => {
     return story && story.id ? (
         <>
         <Row>
-        <Reload onClick={handleReload}>
+        <Reload className={'btn'} onClick={handleReload}>
             <img src={reload} alt={reload} />
         </Reload>
         <Link to="/news">
-        <Reload onClick={handleReload}>
+        <Reload className={'btn'} onClick={handleReload}>
             <img src={back} alt={back} />
         </Reload>
         </Link>

@@ -12,6 +12,7 @@ justify-content: space-between;
 align-items: center;
 max-width: 1600px;
 margin: 40px auto;
+height: 78px;
 
 button{
     margin-left: 0 !important;
