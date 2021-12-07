@@ -5,8 +5,10 @@ padding: 20px;
 background: #fff;
 border-radius: 8px;
 color: #000;
-margin-top: 20px;
 cursor:pointer;
+max-width:1560px;
+margin:0 auto;
+margin-top: 20px;
 
 .comment-wrapper-child{
     padding-left: 2.5%;

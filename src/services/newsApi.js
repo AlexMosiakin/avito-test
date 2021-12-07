@@ -18,7 +18,8 @@ export const getStoryPage = async (storyId) => {
 
 export const getStoryIds = async () => {
     const result = await axios.get(newStoriesUrl).then(({ data }) => data);
-    return result;
+    localStorage.setItem('StoryIds', JSON.stringify(result));
+    return result
 }
 
 export const getComment = async (commentId) => {

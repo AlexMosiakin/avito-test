@@ -3,6 +3,11 @@ import { getStoryPage } from '../services/newsApi';
 import { StoryWrapper } from '../styles/StoryStyles';
 import { Comment } from '../components/Comment';
 import { useStateIfMounted } from 'use-state-if-mounted';
+import { Reload } from '../styles/reloadStyles';
+import reload from '../img/reload.svg';
+import back from '../img/back.svg';
+import { Row } from '../styles/ListStyles';
+import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 
 import star  from "../img/star.svg"
@@ -15,9 +20,10 @@ export const PageNewContainer = ({newCurrentId}) => {
     const [text, setText] = useStateIfMounted(false);
     const [story, setStory] = useState({});
     const [comments, setComments] = useState([]);
+    const [isRun, setIsRun] = useState(false);
 
     useEffect(() => {
-        getStoryPage(newCurrentId).then( (data) => {
+        getStoryPage(localStorage.getItem('newId')).then( (data) => {
             data && data.id && setStory(data);
             setText(true);
             if(data.hasOwnProperty('kids')){
@@ -25,6 +31,12 @@ export const PageNewContainer = ({newCurrentId}) => {
             }
         });
     },[])
+
+    const handleReload = () => {
+        if (isRun) { return; }
+        setIsRun(true);
+        getStoryPage().then(data => data && setComments(data.kids) && setIsRun(false))
+      }
 
     function format_time(s) {
         let a = new Date(s * 1000);
@@ -41,6 +53,17 @@ export const PageNewContainer = ({newCurrentId}) => {
 
     return story && story.id ? (
         <>
+        <Row>
+        <Reload onClick={handleReload}>
+            <img src={reload} alt={reload} />
+        </Reload>
+        <Link to="/news">
+        <Reload onClick={handleReload}>
+            <img src={back} alt={back} />
+        </Reload>
+        </Link>
+        </Row>
+
         <StoryWrapper data-testid={story.id} className={"story-click"}>
             <h2 className={"story-title-item"}>{story.title}</h2>
             <a href={story.url} target="_blank" className={"story-row"}><img src={link}/><span>{story.url}</span></a>

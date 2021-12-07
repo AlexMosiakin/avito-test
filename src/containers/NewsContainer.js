@@ -4,27 +4,38 @@ import { New } from '../components/New';
 import { Link } from "react-router-dom";
 import { AppHeader } from '../styles/ListStyles';
 import { NewsList } from '../styles/ListStyles';
+import { Reload } from '../styles/reloadStyles';
+import { AppHeaderWrapper } from '../styles/ListStyles';
+import reload from '../img/reload.svg'
 
 export const NewsContainer = ({appCallback}) => {
     const [storyIds, setStoryIds] = useState([]);
+    const [isRun, setIsRun] = useState(false);
 
     useEffect(() => {
         getStoryIds().then(data => data && setStoryIds(data))
-        const interval = setInterval(() => {
-        getStoryIds().then(data => data && setStoryIds(data))
-        }, 60000 );
-         return () => clearInterval(interval);
     },[])
+
+    const handleReload = () => {
+      if (isRun) { return; }
+      setIsRun(true);
+      getStoryIds().then(data => data && setStoryIds(data) && setIsRun(false))
+    }
 
     const handleClickId = (e) => {
       if (e.target.classList.contains("story-wrapper")) {
-        console.log(e.target);
+        localStorage.setItem('newId', e.target.getAttribute('data-testid'));
         appCallback(e.target.getAttribute('data-testid'));
       }
   }
-    return storyIds ?(
+    return storyIds ? (
         <>
-        <AppHeader>Hacker News</AppHeader>
+        <AppHeaderWrapper>
+          <AppHeader>Hacker News</AppHeader>
+          <Reload onClick={handleReload}>
+            <img src={reload} alt={reload} />
+          </Reload>
+        </AppHeaderWrapper>
         <NewsList>
         {storyIds.sort((a, b) => {
         if (a.time > b.time) {

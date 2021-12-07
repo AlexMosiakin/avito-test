@@ -7,6 +7,8 @@ border-radius: 8px;
 pointer-events:none;
 height: calc(100% - 40px);
 color:#000;
+max-width:1560px;
+margin: 0 auto;
 
 .story-title{
     font-weight:700;
@@ -16,6 +18,7 @@ color:#000;
     font-weight:700;
     color: rgb(255, 102, 0);
     font-size:32px;
+    margin-top: 0;
 }
 .story-row{
     margin: 0 0 20px 0;
