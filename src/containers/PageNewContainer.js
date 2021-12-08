@@ -36,6 +36,7 @@ export const PageNewContainer = ({newCurrentId}) => {
         if (isRun) { return; }
         setIsRun(true);
         getStoryPage().then(data => data && setComments(data.kids) && setIsRun(false))
+        window.location.reload();
       }
 
     function format_time(s) {
@@ -58,7 +59,7 @@ export const PageNewContainer = ({newCurrentId}) => {
             <img src={reload} alt={reload} />
         </Reload>
         <Link to="/news">
-        <Reload className={'btn'} onClick={handleReload}>
+        <Reload className={'btn'}>
             <img src={back} alt={back} />
         </Reload>
         </Link>

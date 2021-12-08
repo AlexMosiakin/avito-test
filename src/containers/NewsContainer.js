@@ -20,6 +20,7 @@ export const NewsContainer = ({appCallback}) => {
       if (isRun) { return; }
       setIsRun(true);
       getStoryIds().then(data => data && setStoryIds(data) && setIsRun(false))
+      window.location.reload();
     }
 
     const handleClickId = (e) => {

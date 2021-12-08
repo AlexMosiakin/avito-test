@@ -13,10 +13,6 @@ const handleCallback = (childData) =>{
     setId(childData);
 }
 
-if (history.location.pathname !== '/news' || history.location.pathname !== '/new-item') {
-    history.push('/news');
-}
-
 return(
 <BrowserRouter>
     <Switch>
