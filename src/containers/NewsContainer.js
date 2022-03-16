@@ -49,7 +49,7 @@ export const NewsContainer = ({appCallback}) => {
       })
     .map(storyId => (
       
-        <Link key={storyId} to="/new-item">
+        <Link key={storyId} to="/avito-test/new-item">
           <div key={storyId} className={'story-wrapper'} data-testid={storyId} onClick={handleClickId}>
              <New key={storyId} newId={storyId}/>
           </div>
