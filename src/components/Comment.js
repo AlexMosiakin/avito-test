@@ -4,6 +4,8 @@ import { useStateIfMounted } from 'use-state-if-mounted';
 import { CommentChild } from "./CommentChild";
 import { CommentWrapper } from "../styles/CommentStyles";
 import man  from "../img/man.svg";
+import ReactHtmlParser from 'react-html-parser'; 
+
 export const Comment = ({commentId}) => {
 
     const [comment, setComment] = useState({});
@@ -30,7 +32,7 @@ export const Comment = ({commentId}) => {
     return comment && comment.id ? (
         <CommentWrapper className={'comment-wrapper'} onClick={showComments} data-id={commentId}>
             <p><img src={man} alt={man}/> {comment.by}</p>
-            <p>{comment.text}</p>
+            <div> { ReactHtmlParser (comment.text) } </div>
                 {childComment != 0 ? 
                     childComment.map(child => (
                         <div className={'comment-wrapper-child'}>
