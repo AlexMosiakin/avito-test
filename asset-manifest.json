@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/avito-test/news/static/css/main.8182d1a0.chunk.css",
-    "main.js": "/avito-test/news/static/js/main.51b45574.chunk.js",
-    "main.js.map": "/avito-test/news/static/js/main.51b45574.chunk.js.map",
-    "runtime-main.js": "/avito-test/news/static/js/runtime-main.08fd77b5.js",
-    "runtime-main.js.map": "/avito-test/news/static/js/runtime-main.08fd77b5.js.map",
-    "static/js/2.3ddd6644.chunk.js": "/avito-test/news/static/js/2.3ddd6644.chunk.js",
-    "static/js/2.3ddd6644.chunk.js.map": "/avito-test/news/static/js/2.3ddd6644.chunk.js.map",
-    "static/js/3.1e5ac03d.chunk.js": "/avito-test/news/static/js/3.1e5ac03d.chunk.js",
-    "static/js/3.1e5ac03d.chunk.js.map": "/avito-test/news/static/js/3.1e5ac03d.chunk.js.map",
-    "index.html": "/avito-test/news/index.html",
-    "static/css/main.8182d1a0.chunk.css.map": "/avito-test/news/static/css/main.8182d1a0.chunk.css.map",
-    "static/js/2.3ddd6644.chunk.js.LICENSE.txt": "/avito-test/news/static/js/2.3ddd6644.chunk.js.LICENSE.txt",
-    "static/media/back.88938ea5.svg": "/avito-test/news/static/media/back.88938ea5.svg",
-    "static/media/comment.dd7f7e90.svg": "/avito-test/news/static/media/comment.dd7f7e90.svg",
-    "static/media/link.baaa8043.svg": "/avito-test/news/static/media/link.baaa8043.svg",
-    "static/media/man.9a2295f8.svg": "/avito-test/news/static/media/man.9a2295f8.svg",
-    "static/media/reload.eb18d95f.svg": "/avito-test/news/static/media/reload.eb18d95f.svg",
-    "static/media/star.2ee569fb.svg": "/avito-test/news/static/media/star.2ee569fb.svg",
-    "static/media/time.c1581ebe.svg": "/avito-test/news/static/media/time.c1581ebe.svg"
+    "main.css": "/avito-test/static/css/main.8182d1a0.chunk.css",
+    "main.js": "/avito-test/static/js/main.50ff57a4.chunk.js",
+    "main.js.map": "/avito-test/static/js/main.50ff57a4.chunk.js.map",
+    "runtime-main.js": "/avito-test/static/js/runtime-main.4efa81de.js",
+    "runtime-main.js.map": "/avito-test/static/js/runtime-main.4efa81de.js.map",
+    "static/js/2.4467b012.chunk.js": "/avito-test/static/js/2.4467b012.chunk.js",
+    "static/js/2.4467b012.chunk.js.map": "/avito-test/static/js/2.4467b012.chunk.js.map",
+    "static/js/3.1e5ac03d.chunk.js": "/avito-test/static/js/3.1e5ac03d.chunk.js",
+    "static/js/3.1e5ac03d.chunk.js.map": "/avito-test/static/js/3.1e5ac03d.chunk.js.map",
+    "index.html": "/avito-test/index.html",
+    "static/css/main.8182d1a0.chunk.css.map": "/avito-test/static/css/main.8182d1a0.chunk.css.map",
+    "static/js/2.4467b012.chunk.js.LICENSE.txt": "/avito-test/static/js/2.4467b012.chunk.js.LICENSE.txt",
+    "static/media/back.88938ea5.svg": "/avito-test/static/media/back.88938ea5.svg",
+    "static/media/comment.dd7f7e90.svg": "/avito-test/static/media/comment.dd7f7e90.svg",
+    "static/media/link.baaa8043.svg": "/avito-test/static/media/link.baaa8043.svg",
+    "static/media/man.9a2295f8.svg": "/avito-test/static/media/man.9a2295f8.svg",
+    "static/media/reload.eb18d95f.svg": "/avito-test/static/media/reload.eb18d95f.svg",
+    "static/media/star.2ee569fb.svg": "/avito-test/static/media/star.2ee569fb.svg",
+    "static/media/time.c1581ebe.svg": "/avito-test/static/media/time.c1581ebe.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.08fd77b5.js",
-    "static/js/2.3ddd6644.chunk.js",
+    "static/js/runtime-main.4efa81de.js",
+    "static/js/2.4467b012.chunk.js",
     "static/css/main.8182d1a0.chunk.css",
-    "static/js/main.51b45574.chunk.js"
+    "static/js/main.50ff57a4.chunk.js"
   ]
 }
