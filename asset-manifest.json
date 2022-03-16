@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/avito-test/news/static/css/main.8182d1a0.chunk.css",
+    "main.js": "/avito-test/news/static/js/main.b0bf46a5.chunk.js",
+    "main.js.map": "/avito-test/news/static/js/main.b0bf46a5.chunk.js.map",
+    "runtime-main.js": "/avito-test/news/static/js/runtime-main.94a1f47f.js",
+    "runtime-main.js.map": "/avito-test/news/static/js/runtime-main.94a1f47f.js.map",
+    "static/js/2.ee6ebd2f.chunk.js": "/avito-test/news/static/js/2.ee6ebd2f.chunk.js",
+    "static/js/2.ee6ebd2f.chunk.js.map": "/avito-test/news/static/js/2.ee6ebd2f.chunk.js.map",
+    "static/js/3.7b44fc61.chunk.js": "/avito-test/news/static/js/3.7b44fc61.chunk.js",
+    "static/js/3.7b44fc61.chunk.js.map": "/avito-test/news/static/js/3.7b44fc61.chunk.js.map",
+    "index.html": "/avito-test/news/index.html",
+    "static/css/main.8182d1a0.chunk.css.map": "/avito-test/news/static/css/main.8182d1a0.chunk.css.map",
+    "static/js/2.ee6ebd2f.chunk.js.LICENSE.txt": "/avito-test/news/static/js/2.ee6ebd2f.chunk.js.LICENSE.txt",
+    "static/media/back.88938ea5.svg": "/avito-test/news/static/media/back.88938ea5.svg",
+    "static/media/comment.dd7f7e90.svg": "/avito-test/news/static/media/comment.dd7f7e90.svg",
+    "static/media/link.baaa8043.svg": "/avito-test/news/static/media/link.baaa8043.svg",
+    "static/media/man.9a2295f8.svg": "/avito-test/news/static/media/man.9a2295f8.svg",
+    "static/media/reload.eb18d95f.svg": "/avito-test/news/static/media/reload.eb18d95f.svg",
+    "static/media/star.2ee569fb.svg": "/avito-test/news/static/media/star.2ee569fb.svg",
+    "static/media/time.c1581ebe.svg": "/avito-test/news/static/media/time.c1581ebe.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.94a1f47f.js",
+    "static/js/2.ee6ebd2f.chunk.js",
+    "static/css/main.8182d1a0.chunk.css",
+    "static/js/main.b0bf46a5.chunk.js"
+  ]
+}
