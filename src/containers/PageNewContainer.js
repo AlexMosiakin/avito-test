@@ -58,7 +58,7 @@ export const PageNewContainer = ({newCurrentId}) => {
         <Reload className={'btn'} onClick={handleReload}>
             <img src={reload} alt={reload} />
         </Reload>
-        <Link to="/avito-test/news">
+        <Link to="/avito-test">
         <Reload className={'btn'}>
             <img src={back} alt={back} />
         </Reload>

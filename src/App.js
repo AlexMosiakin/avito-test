@@ -16,7 +16,7 @@ const handleCallback = (childData) =>{
 return(
 <BrowserRouter>
     <Switch>
-        <Route path="/avito-test/news">
+        <Route exact  path="/avito-test">
             <NewsContainer appCallback={handleCallback}/>
         </Route>
         <Route path="/avito-test/new-item">
